@@ -15,6 +15,7 @@ PyInstaller.__main__.run([
     f'--add-data={os.path.join(project_dir, "lidar_configs.json")};.',
     f'--add-data={os.path.join(project_dir, "icon.ico")};.',
     f'--add-data={os.path.join(project_dir, "generic_parser.py")};.',
+    f'--add-data={os.path.join(project_dir, "tfmini_plus_protocol.py")};.',
     '--noconfirm',
     '--clean',
     f'--distpath={os.path.join(project_dir, "dist")}',

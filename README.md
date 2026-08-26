@@ -1,6 +1,6 @@
 # X LiDARViewer
 
-![Version](https://img.shields.io/badge/version-V1.1.0-blue)
+![Version](https://img.shields.io/badge/version-V1.2.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
 ![License](https://img.shields.io/badge/license-MIT-orange)
 

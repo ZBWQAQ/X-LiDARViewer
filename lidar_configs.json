@@ -50,6 +50,7 @@
                 "parity": "N"
             },
             "protocol": {
+                "type": "tfmini_plus",
                 "header": [
                     89,
                     89
@@ -57,19 +58,10 @@
                 "frame_size": 9,
                 "points_per_frame": 1,
                 "endian": "little",
-                "speed_offset": 2,
-                "speed_divisor": 1.0,
-                "speed_hz_divisor": 60.0,
-                "start_angle_offset": 2,
-                "end_angle_offset": 2,
-                "angle_divisor": 1.0,
-                "angle_offset": 0.0,
-                "points_offset": 2,
-                "point_size": 7,
-                "distance_bytes": 2,
-                "quality_offset_in_point": 2,
-                "crc_offset": 8,
-                "distance_multiplier": 10
+                "distance_multiplier": 10,
+                "config_header": [
+                    90
+                ]
             },
             "scan": {
                 "frames_per_scan": 100,
