@@ -1,0 +1,119 @@
+{
+    "active_profile": "tfmini_plus",
+    "profiles": {
+        "camsense_x1": {
+            "name": "Camsense X1",
+            "description": "Camsense X1 360度单点激光雷达",
+            "serial": {
+                "baudrate": 115200,
+                "bytesize": 8,
+                "stopbits": 1,
+                "parity": "N"
+            },
+            "protocol": {
+                "header": [
+                    85,
+                    170,
+                    3,
+                    8
+                ],
+                "frame_size": 36,
+                "points_per_frame": 8,
+                "endian": "little",
+                "speed_offset": 4,
+                "speed_divisor": 64.0,
+                "speed_hz_divisor": 3840.0,
+                "start_angle_offset": 6,
+                "end_angle_offset": 32,
+                "angle_divisor": 64.0,
+                "angle_offset": -640.0,
+                "points_offset": 8,
+                "point_size": 3,
+                "distance_bytes": 2,
+                "quality_offset_in_point": 2,
+                "crc_offset": 34
+            },
+            "scan": {
+                "frames_per_scan": 52,
+                "min_distance": 0,
+                "max_distance": 5000,
+                "quality_threshold": 1
+            }
+        },
+        "tfmini_plus": {
+            "name": "TFmini Plus",
+            "description": "Benewake TFmini Plus 单点激光测距传感器 (10cm-12m)",
+            "serial": {
+                "baudrate": 115200,
+                "bytesize": 8,
+                "stopbits": 1,
+                "parity": "N"
+            },
+            "protocol": {
+                "header": [
+                    89,
+                    89
+                ],
+                "frame_size": 9,
+                "points_per_frame": 1,
+                "endian": "little",
+                "speed_offset": 2,
+                "speed_divisor": 1.0,
+                "speed_hz_divisor": 60.0,
+                "start_angle_offset": 2,
+                "end_angle_offset": 2,
+                "angle_divisor": 1.0,
+                "angle_offset": 0.0,
+                "points_offset": 2,
+                "point_size": 7,
+                "distance_bytes": 2,
+                "quality_offset_in_point": 2,
+                "crc_offset": 8,
+                "distance_multiplier": 10
+            },
+            "scan": {
+                "frames_per_scan": 100,
+                "min_distance": 100,
+                "max_distance": 12000,
+                "quality_threshold": 100
+            }
+        },
+        "custom": {
+            "name": "Custom LiDAR",
+            "description": "自定义雷达配置，请根据实际协议修改",
+            "serial": {
+                "baudrate": 115200,
+                "bytesize": 8,
+                "stopbits": 1,
+                "parity": "N"
+            },
+            "protocol": {
+                "header": [
+                    85,
+                    170
+                ],
+                "frame_size": 32,
+                "points_per_frame": 8,
+                "endian": "little",
+                "speed_offset": 2,
+                "speed_divisor": 64.0,
+                "speed_hz_divisor": 3840.0,
+                "start_angle_offset": 4,
+                "end_angle_offset": 28,
+                "angle_divisor": 64.0,
+                "angle_offset": 0.0,
+                "points_offset": 6,
+                "point_size": 3,
+                "distance_bytes": 2,
+                "quality_offset_in_point": 2,
+                "crc_offset": 30
+            },
+            "scan": {
+                "frames_per_scan": 50,
+                "min_distance": 0,
+                "max_distance": 5000,
+                "quality_threshold": 1
+            }
+        }
+    }
+}
